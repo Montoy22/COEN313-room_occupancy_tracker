@@ -1,0 +1,265 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Nov 15 22:27:35 2024
+# Process ID: 8193
+# Current directory: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project
+# Command line: vivado
+# Log file: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/vivado.log
+# Journal file: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:03:54 . Memory (MB): peak = 6332.184 ; gain = 111.336 ; free physical = 12553 ; free virtual = 23769
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: rom4
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 6365.191 ; gain = 16.992 ; free physical = 12413 ; free virtual = 23639
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'rom4' [/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/ROT4.vhd:18]
+WARNING: [Synth 8-614] signal 'X' is read in the process but is not in the sensitivity list [/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/ROT4.vhd:21]
+WARNING: [Synth 8-614] signal 'Y' is read in the process but is not in the sensitivity list [/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/ROT4.vhd:21]
+WARNING: [Synth 8-614] signal 'current_occupancy' is read in the process but is not in the sensitivity list [/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/ROT4.vhd:21]
+WARNING: [Synth 8-614] signal 'max_occupancy' is read in the process but is not in the sensitivity list [/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/ROT4.vhd:21]
+WARNING: [Synth 8-6014] Unused sequential element current_occupancy_reg was removed.  [/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/ROT4.vhd:27]
+WARNING: [Synth 8-6014] Unused sequential element Z_reg was removed.  [/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/ROT4.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'rom4' (1#1) [/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/ROT4.vhd:18]
+WARNING: [Synth 8-3331] design rom4 has unconnected port X
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:31 . Memory (MB): peak = 6396.551 ; gain = 48.352 ; free physical = 12434 ; free virtual = 23661
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:32 . Memory (MB): peak = 6396.551 ; gain = 48.352 ; free physical = 12428 ; free virtual = 23655
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:32 . Memory (MB): peak = 6396.551 ; gain = 48.352 ; free physical = 12428 ; free virtual = 23655
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:01:39 . Memory (MB): peak = 6857.629 ; gain = 509.430 ; free physical = 12085 ; free virtual = 23347
+6 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:01:39 . Memory (MB): peak = 6857.629 ; gain = 509.430 ; free physical = 12085 ; free virtual = 23347
+reset_run impl_1
+reset_run: Time (s): cpu = 00:00:03 ; elapsed = 00:01:02 . Memory (MB): peak = 6859.629 ; gain = 0.000 ; free physical = 12013 ; free virtual = 23277
+launch_runs impl_1 -jobs 2
+[Fri Nov 15 23:17:19 2024] Launched impl_1...
+Run output will be captured here: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:19 . Memory (MB): peak = 6859.629 ; gain = 0.000 ; free physical = 11980 ; free virtual = 23244
+file mkdir /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd w ]
+add_files -fileset sim_1 /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rot_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj rot_TB_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/ROT4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rom4
+INFO: [VRFC 10-163] Analyzing VHDL file "/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rot_TB
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:29 . Memory (MB): peak = 6902.652 ; gain = 0.000 ; free physical = 11919 ; free virtual = 23254
+INFO: [USF-XSim-69] 'compile' step finished in '30' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 67032be7fe4b436a90e83cb799e82adb --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot rot_TB_behav xil_defaultlib.rot_TB -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture arch_rot4 of entity xil_defaultlib.rom4 [rom4_default]
+Compiling architecture data of entity xil_defaultlib.rot_tb
+Built simulation snapshot rot_TB_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.sim/sim_1/behav/xsim/xsim.dir/rot_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Nov 15 23:24:31 2024...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:46 . Memory (MB): peak = 6902.652 ; gain = 0.000 ; free physical = 11846 ; free virtual = 23258
+INFO: [USF-XSim-69] 'elaborate' step finished in '45' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rot_TB_behav -key {Behavioral:sim_1:Functional:rot_TB} -tclbatch {rot_TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source rot_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Assertion violation
+Time: 180 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 190 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 200 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 210 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 220 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 230 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 240 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 250 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 310 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 320 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 330 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 340 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 350 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 360 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 370 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 380 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 440 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 450 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 460 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 470 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 480 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 490 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 500 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 510 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 570 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 580 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 590 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 600 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 610 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 620 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 630 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 640 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 700 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 710 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 720 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 730 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 740 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 750 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 760 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 770 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 830 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 840 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 850 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 860 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 870 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 880 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 890 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 900 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 960 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 970 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 980 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 990 ns  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+Error: Assertion violation
+Time: 1 us  Iteration: 0  Process: /rot_TB/cases  File: /nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 6961.469 ; gain = 49.844 ; free physical = 11791 ; free virtual = 23210
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rot_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:01:32 . Memory (MB): peak = 6961.469 ; gain = 58.816 ; free physical = 11791 ; free virtual = 23210
+add_bp {/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd} 21
+remove_bps -file {/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd} -line 21
+add_bp {/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd} 22
+add_bp {/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd} 23
+remove_bps -file {/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd} -line 23
+add_bp {/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd} 58
+remove_bps -file {/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd} -line 58
+add_bp {/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd} 57
+remove_bps -file {/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd} -line 57
+add_bp {/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd} 55
+remove_bps -file {/nfs/home/m/m_mureit/COEN313/personal/COEN313_Project/COEN313_ProjectVer1_project_1/COEN313_ProjectVer1_project_1.srcs/sim_1/new/rot_TB.vhd} -line 55
